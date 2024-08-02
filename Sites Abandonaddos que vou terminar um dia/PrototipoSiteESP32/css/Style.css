@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-image: url('../img/backgroundblack.jpg'); /* Caminho para a imagem */
+  background-size: cover; /* Redimensiona a imagem para cobrir todo o fundo */
+  background-position: center; /* Centraliza a imagem no fundo */
+  background-repeat: no-repeat; /* Impede a repetição da imagem */
+  background-position: center top 50px;
+  /* overflow-y: auto; */
+}
+
+.menu, .cabessalho {
+  width: 100%;
+  padding: 9px;
+}
+
+.menu {
+  display: flex;
+  text-align: left;
+  background-color: #ffffff;
+  color: #2FAAA6;
+  align-items: center;
+  /* border: 2px solid #2FAAA6; */
+}
+
+.menu p , .menu a {
+  margin-right: 20px; /* Espaçamento entre os elementos */
+  /* background-color: #1a1646; */
+  padding: 0px 5px;
+  /* border: 2px solid #0a0a0a; */
+  text-decoration: none;
+  -webkit-text-fill-color: #2FAAA6;
+}
+.menu img {
+  width: 50px; /* Ajuste o tamanho do ícone conforme necessário */
+  height: 30px;
+  border: 3px solid #2FAAA6;
+  margin-right: 30px;
+}
+
+.cabessalho {
+  background-color: #282345;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 30px;
+  color: #FF9996;
+}
+
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px; /* Espaçamento entre o ícone e o título */
+}
+
+.icon img {
+  width: 125px; /* Ajuste o tamanho do ícone conforme necessário */
+  height: 110px;
+}
+
+.title {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.lamp-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* background-color: #410115; */
+}
+
+.lamp {
+  position: relative;
+  width: 120px;
+  height: 200px;
+  cursor: pointer;
+}
+
+.base {
+  position: relative;
+  width: 40px;
+  height: 60px;
+  background-color: #333;
+  margin: 0 auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.bulb {
+  position: absolute;
+  top: 20px;
+  left: 15px;
+  width: 90px;
+  height: 120px;
+  background-color: #f5f5f5;
+  border-radius: 50%;
+  transition: transform 0.5s, background-color 0.5s;
+}
+
+.light {
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 220px;
+  height: 220px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 0%, transparent 70%);
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+.on .bulb {
+  background-color: #ffe600;
+}
+
+.on .light {
+  opacity: 1;
+}
+
+body.light-on {
+  background-image: url('../img/backgroundwhite.jpg');
+}
+
+body.light-off {
+  background-image: url('../img/backgroundblack.jpg');
+}
+
+/*
+.box1 {
+  margin-top: 400px;
+  width: 100%;
+  height: 100px;
+  background-color: red;
+}
+.item1 {
+  width: 100px;
+  height: 100px;
+  background-color: #2FAAA6;
+}
+*/
+ 
+footer {
+  background-color: #282345;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  margin-top: auto;
+}

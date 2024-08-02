@@ -1,0 +1,62 @@
+/* Estilo básico das abas */
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Estilo da aba ativa */
+.aba-ativa {
+    border-bottom: 2px solid #333;
+    
+}
+
+/* Estilo do conteúdo das abas */
+.aba-conteudo {
+    display: none;
+    padding: 2px;
+}
+
+.aba-conteudo > li, h2{
+    margin-left: 50px;
+}
+
+.aba-conteudo.active {
+    display: block;
+}
+
+#home{
+    background-color: aqua;
+}
+
+#sobre{
+    background-color: blueviolet;
+}
+
+#novidades{
+    background-color: red;
+}
+
+.menu{
+    background-color:aquamarine;
+    padding: 1px;
+}
+
+.menu li{
+    border: 2px solid #333;
+}
+
+.box{
+    width: 100%;
+    min-height: 650px;
+    background-color: #adb5ff;
+}
